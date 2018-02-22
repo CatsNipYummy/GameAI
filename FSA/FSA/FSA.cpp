@@ -2,18 +2,20 @@
 //
 
 #include "stdafx.h"
-#include <iostream>
-#include <conio.h>
-
-#include "BaseEntity.h"
+#include "ShooterEnemyEntity.h"
 
 int main()
 {
-	BaseEntity entity;
+	ShooterEnemyEntity entity(10, 10, 20, 10);
 	std::cout << entity.ID();
 
-	BaseEntity entity2;
+	ShooterEnemyEntity entity2(40, 20, 20, 10);
 	std::cout << entity2.ID();
+
+	for (int i = 0; i < 10; i++) {
+		entity.Update();
+		Sleep(800);
+	}
 
 	while (!_kbhit()) {}
     return 0;

@@ -15,10 +15,6 @@ BaseEntity::~BaseEntity()
 
 }
 
-void BaseEntity::Update()
-{
-}
-
 int BaseEntity::ID()
 {
 	return m_iID;

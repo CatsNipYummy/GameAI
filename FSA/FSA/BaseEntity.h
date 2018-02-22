@@ -10,7 +10,7 @@ public:
 	~BaseEntity();
 
 	// Every entity has an update
-	void Update();
+	virtual void Update() = 0;
 
 	static int ID();
 };
